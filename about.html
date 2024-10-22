@@ -9,6 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         .hero {
@@ -66,6 +67,21 @@
         .info-box:hover {
             transform: scale(1.05);
         }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px); /* Slide in from below */
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0); /* End position */
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out; /* Duration and easing */
+        }
     </style>
 </head>
 
@@ -95,14 +111,14 @@
     </nav>
 
     <section class="hero">
-        <div class="container text-center">
+        <div class="container text-center fade-in">
             <h1 class="display-4">About Me</h1>
             <p class="lead">Welcome to my personal page! I'm John Christoper Serdon.</p>
         </div>
     </section>
 
     <section>
-        <div class="container section-content">
+        <div class="container section-content fade-in">
             <div class="row align-items-center">
                 <div class="col-md-6 text-center image-container">
                     <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t39.30808-6/456176441_1885603718580772_3495490946371536057_n.jpg?stp=dst-jpg_p526x296&_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEEaE64Oligxh9f7PrVONGIgUhyZzkqJW-BSHJnOSolbyQm1p7XeWlk2hbgS5yFRNcGq-nKR4S6gjiXXT9fuuyc&_nc_ohc=jurXrIJf40YQ7kNvgHOVxGe&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=AEQb3gSPhjAr-EtPVdi5enh&oh=00_AYC3l_I3FqpvtcVRteNZ5yUwMmm6h_uc4U8cqbdAv0wNQQ&oe=671AB0CD"
@@ -116,7 +132,7 @@
 
                     <div class="info-box">
                         <h2>My Background</h2>
-                        <p>I am currently studying at Polytechnic University of the Philippines(PUP), and gained practical experience through my OJT at COMELEC. This opportunity allows me to apply my academic knowledge in real-world scenarios and develop essential skills for my future career. Additionally, I have a keen interest in web development and design, which I actively pursue through personal projects. My goal is to become a proficient professional in my field, contributing positively to any organization I join.</p>
+                        <p>I am currently studying at Polytechnic University of the Philippines (PUP), and gained practical experience through my OJT at COMELEC. This opportunity allows me to apply my academic knowledge in real-world scenarios and develop essential skills for my future career. Additionally, I have a keen interest in web development and design, which I actively pursue through personal projects. My goal is to become a proficient professional in my field, contributing positively to any organization I join.</p>
                     </div>
                 </div>
             </div>
