@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Puerto Princesa</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero {
+            background-image: url('https://cdn.getyourguide.com/img/tour/04f4bb6d0954c06a.jpeg/146.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 220px 0;
+            position: relative;
+            z-index: 1;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+
+        .hero h1,
+        .hero p {
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 30px auto;
+        }
+
+        .search-bar .input-group {
+            border-radius: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .search-bar .form-control {
+            border-radius: 20px;
+            padding: 15px;
+            font-size: 1rem;
+        }
+
+        .search-btn {
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .search-btn:hover {
+            transform: scale(1.1);
+            background-color: #d9534f;
+            border-color: #c9302c;
+        }
+
+        /* Tourist Spots Section */
+        .tourist-spots {
+            background-color: #ffffff;
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .spot-card {
+            margin-bottom: 30px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .spot-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .spot-card img {
+            border-radius: 15px;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .card-text {
+            font-size: 1.1rem;
+            color: #777;
+        }
+
+        /* Unique Experiences Section */
+        .unique-experiences {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .experience-card {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .experience-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .experience-card h5 {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .experience-card p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer p {
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-3">Explore Puerto Princesa</h1>
+            <p class="lead">A stunning paradise with natural beauty, rich culture, and unforgettable experiences.</p>
+            <div class="search-bar">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for food or Restaurant">
+                    <input type="text" class="form-control" placeholder="Where?">
+                    <button class="btn btn-danger search-btn" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Tourist Spots Section -->
+    <section class="tourist-spots">
+        <div class="container">
+            <h2 class="section-title text-left">Top Tourist Spots</h2>
+            <div class="row">
+                <div class="col-md-4 spot-card">
+                    <img src="https://th.bing.com/th/id/OIP.WRx9E36_rin1LseXLcnm_gHaE7?rs=1&pid=ImgDetMain"
+                        alt="Underground River">
+                    <div class="card-body">
+                        <h5 class="card-title">Underground River</h5>
+                        <p class="card-text">A UNESCO World Heritage Site, this natural wonder offers a surreal boat
+                            ride through its cave system.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://th.bing.com/th/id/OIP.1I4buhwFVG-6SkkzO7HZSgHaEK?rs=1&pid=ImgDetMain"
+                        alt="Honda Bay">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda Bay</h5>
+                        <p class="card-text">Known for its crystal-clear waters and stunning islands, Honda Bay is the
+                            perfect spot for island hopping and snorkeling.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://1.bp.blogspot.com/-dqkvdWQk4l8/XP4Al4UFvrI/AAAAAAAASZs/xa9EAv1XPXU3GMtYcuUVvvLe8zCo22ScACKgBGAs/s1600/puerto-princesa-to-el-nido.jpg"
+                        alt="El Nido">
+                    <div class="card-body">
+                        <h5 class="card-title">El Nido</h5>
+                        <p class="card-text">A beautiful beach town famous for its limestone cliffs, hidden lagoons, and
+                            vibrant coral reefs.</p>
+                    </div>
+                </div>
+                <!-- Additional Tourist Spots -->
+                <div class="col-md-4 spot-card">
+                    <img src="https://static.wixstatic.com/media/dfb8d3_d526c5a83133412dadb385c7e4274867~mv2.jpg/v1/fill/w_1000,h_666,al_c,q_85,usm_0.66_1.00_0.01/dfb8d3_d526c5a83133412dadb385c7e4274867~mv2.jpg"
+                        alt="Puerto Princesa Airport">
+                    <div class="card-body">
+                        <h5 class="card-title">Puerto Princesa Airport</h5>
+                        <p class="card-text">The gateway to Palawan, offering access to the stunning natural wonders and
+                            eco-tourism destinations of the island.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://mediaim.expedia.com/destination/2/192f9477b25f18f766539f6ab799d73d.jpg"
+                        alt="Sabang Beach">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabang Beach</h5>
+                        <p class="card-text">A serene beach famous for its beautiful sands and clear waters, perfect for
+                            swimming, relaxing, and picnicking.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://viajareafilipinas.com/wp-content/uploads/2020/05/Twin-Lagoon-Entrance-1.jpg"
+                        alt="Twin Lagoons">
+                    <div class="card-body">
+                        <h5 class="card-title">Twin Lagoons</h5>
+                        <p class="card-text">A unique natural phenomenon with two lagoons, one fresh and one saltwater,
+                            separated by a rock formation that you can swim through.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://th.bing.com/th/id/OIP.3-wIy_GoV9WU93cq_iKbHwHaFj?rs=1&pid=ImgDetMain"
+                        alt="Nagtabon Beach">
+                    <div class="card-body">
+                        <h5 class="card-title">Nagtabon Beach</h5>
+                        <p class="card-text">A hidden gem perfect for surfing, relaxing, and enjoying breathtaking
+                            sunsets.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://mediaim.expedia.com/localexpert/472777/7474f013-e836-43f4-af54-967d18ccf6e8.jpg?impolicy=resizecrop&rw=1005&rh=565"
+                        alt="Iwahig Firefly Watching">
+                    <div class="card-body">
+                        <h5 class="card-title">Iwahig Firefly Watching</h5>
+                        <p class="card-text">An enchanting evening activity where visitors can witness the beauty of
+                            fireflies lighting up the mangroves.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://nationalparks-15bc7.kxcdn.com/images/parks/puerto-princesa-subterranean-river/Puerto%20Princesa%20Subterranean%20River%20%20front%20entrance.jpg"
+                        alt="Puerto Princesa Subterranean River National Park Trails">
+                    <div class="card-body">
+                        <h5 class="card-title">Puerto Princesa Subterranean River National Park Trails</h5>
+                        <p class="card-text">Beyond the famous river, there are nature trails within the park where
+                            visitors can see unique flora and fauna.</p>
+                    </div>
+                </div>
+
+                <!-- Additional Tourist Spots -->
+                <div class="col-md-4 spot-card">
+                    <img src="https://i.ytimg.com/vi/s-VgjQylU10/maxresdefault.jpg" alt="Baker's Hill">
+                    <div class="card-body">
+                        <h5 class="card-title">Baker's Hill</h5>
+                        <p class="card-text">A popular destination in Puerto Princesa known for its delicious baked
+                            goods, gardens, and scenic views. Perfect for families and tourists looking to relax and
+                            enjoy local treats.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://i0.wp.com/shellwanders.com/wp-content/uploads/2023/05/plaza-cuartel-and-cathedral-puerto-princesa-palawan.jpg?fit=1464%2C944&ssl=1"
+                        alt="Plaza Cuartel">
+                    <div class="card-body">
+                        <h5 class="card-title">Plaza Cuartel</h5>
+                        <p class="card-text">A historic park filled with stories of bravery from World War II. Plaza
+                            Cuartel offers a glimpse into the rich history of the city.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 spot-card">
+                    <img src="https://th.bing.com/th/id/R.2ebf76f7d7cbc017304879ed4492069c?rik=7sDpUmeH1PIw3A&riu=http%3a%2f%2fwww.adventureseeker.org%2fwp-content%2fuploads%2f2013%2f06%2fCrocodile-Farm_1.jpg&ehk=OWp9V8R0NEWaw5vaz3Ajz3gqT%2bcixzlc4420ZhrTpNY%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Crocodile Farm">
+                    <div class="card-body">
+                        <h5 class="card-title">Palawan Wildlife Rescue and Conservation Center (Crocodile Farm)</h5>
+                        <p class="card-text">A wildlife conservation center that houses and showcases crocodiles and
+                            other animals. This site provides education on conservation and wildlife protection in
+                            Palawan.</p>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Unique Experiences Section -->
+    <!-- Unique Puerto Princesa Food and Restaurants Section -->
+    <section class="unique-experiences">
+        <div class="container">
+            <h2 class="section-title text-left">Top Food and Restaurants in Puerto Princesa</h2>
+            <div class="row">
+                <div class="col-md-4 experience-card">
+                    <img src="https://www.thepoortraveler.net/wp-content/uploads/2011/04/kalui.jpg"
+                        alt="KaLui Restaurant">
+                    <h5>KaLui Restaurant</h5>
+                    <p>Famous for its fresh seafood and artistic ambiance, KaLui is a must-visit for an authentic
+                        Filipino dining experience.</p>
+                </div>
+                <div class="col-md-4 experience-card">
+                    <img src="https://4.bp.blogspot.com/-sdrp-0_Z2Q4/U5f8P8mfEdI/AAAAAAAAPVk/4ZF_d-GrMfw/s1600/Badjao+Seafront+Palawan_001.JPG"
+                        alt="Badjao Seafront Restaurant">
+                    <h5>Badjao Seafront Restaurant</h5>
+                    <p>Enjoy seafood dishes with a breathtaking view of the mangroves and the sea, offering a peaceful
+                        and scenic dining experience.</p>
+                </div>
+                <div class="col-md-4 experience-card">
+                    <img src="https://th.bing.com/th/id/R.def6fb6d0ab3d043e98cd6c37e5ed615?rik=cTLBYC4iX6kWOg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-zSZfPNz_2Bw%2fU8OjuQeXmBI%2fAAAAAAAAP8w%2fU-SyLlTJfW8%2fs1600%2fKinabuchs%2bPuerto%2bPrincesa_002.JPG&ehk=9zWsyFcNT%2fmOL5rUvRDxyO9cGt8OYlZ%2fnj1s1zY5fOI%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Kinabuch's Grill and Bar">
+                    <h5>Kinabuch's Grill and Bar</h5>
+                    <p>A lively spot for dining and entertainment, Kinabuch’s is popular for its local specialties and
+                        relaxed atmosphere.</p>
+                </div>
+                <div class="col-md-4 experience-card">
+                    <img src="https://i0.wp.com/www.donnaamisdavis.com/wp-content/uploads/2014/02/Renes-Entrance-signs.jpg?ssl=1"
+                        alt="Rene Saigon">
+                    <h5>Rene Saigon</h5>
+                    <p>Specializing in Vietnamese cuisine, Rene Saigon offers a fresh and delicious alternative for
+                        those seeking bold and flavorful dishes.</p>
+                </div>
+                <div class="col-md-4 experience-card">
+                    <img src="https://www.travel-palawan.com/wp-content/uploads/2023/02/ka-inato-restaurant-puerto-princesa.jpeg"
+                        alt="Ka Inato">
+                    <h5>Ka Inato</h5>
+                    <p>Ka Inato serves delicious local dishes with a twist, offering a truly Filipino experience for
+                        food lovers. Try their crispy binagoongan and other traditional favorites.</p>
+                </div>
+                <div class="col-md-4 experience-card">
+                    <img src="https://th.bing.com/th/id/R.075708c234d2e8c36a0d11c594561bde?rik=CFzan9te3SfFAw&riu=http%3a%2f%2f2.bp.blogspot.com%2f_3WObWUOzSI0%2fTS-HntAw1rI%2fAAAAAAAACCg%2f--vYVdkjCZI%2fs1600%2fGOPR4483b.jpg&ehk=ut896MlxZpi4cE20eoiD7m83AAgWFT8m1hn8vp9gVC8%3d&risl=&pid=ImgRaw&r=0"
+                        alt="The Baker's Hill">
+                    <h5>The Baker's Hill</h5>
+                    <p>A famous bakery and restaurant, The Baker's Hill offers a variety of freshly baked goods, as well
+                        as hearty Filipino meals, and is a popular stop for tourists looking to try local pastries and
+                        snacks.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>© 2024 Explore Puerto Princesa | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
