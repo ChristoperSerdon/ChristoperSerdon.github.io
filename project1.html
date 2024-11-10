@@ -10,7 +10,6 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* General Styles */
         body {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
@@ -71,9 +70,8 @@
             border-color: #c9302c;
         }
 
-        /* Tourist Spots Section */
         .tourist-spots {
-            background-color: #ffffff;
+            background-color: skyblue;
             padding: 50px 0;
         }
 
@@ -103,8 +101,14 @@
             object-fit: cover;
         }
 
-        .card-body {
+        .spot-card {
             padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .card-title {
@@ -118,15 +122,14 @@
             color: #777;
         }
 
-        /* Unique Experiences Section */
         .unique-experiences {
-            background-color: #f9f9f9;
+            background-color: skyblue;
             padding: 50px 0;
         }
 
         .experience-card {
             padding: 20px;
-            background-color: #fff;
+            background-color: white;
             border-radius: 10px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -157,7 +160,6 @@
             margin-top: 10px;
         }
 
-        /* Footer */
         .footer {
             background-color: #333;
             color: white;
@@ -173,8 +175,6 @@
 </head>
 
 <body>
-
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <h1 class="display-3">Explore Puerto Princesa</h1>
@@ -188,9 +188,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Tourist Spots Section -->
     <section class="tourist-spots">
         <div class="container">
             <h2 class="section-title text-left">Top Tourist Spots</h2>
@@ -222,7 +219,6 @@
                             vibrant coral reefs.</p>
                     </div>
                 </div>
-                <!-- Additional Tourist Spots -->
                 <div class="col-md-4 spot-card">
                     <img src="https://static.wixstatic.com/media/dfb8d3_d526c5a83133412dadb385c7e4274867~mv2.jpg/v1/fill/w_1000,h_666,al_c,q_85,usm_0.66_1.00_0.01/dfb8d3_d526c5a83133412dadb385c7e4274867~mv2.jpg"
                         alt="Puerto Princesa Airport">
@@ -277,8 +273,6 @@
                             visitors can see unique flora and fauna.</p>
                     </div>
                 </div>
-
-                <!-- Additional Tourist Spots -->
                 <div class="col-md-4 spot-card">
                     <img src="https://i.ytimg.com/vi/s-VgjQylU10/maxresdefault.jpg" alt="Baker's Hill">
                     <div class="card-body">
@@ -310,9 +304,6 @@
 
             </div>
     </section>
-
-    <!-- Unique Experiences Section -->
-    <!-- Unique Puerto Princesa Food and Restaurants Section -->
     <section class="unique-experiences">
         <div class="container">
             <h2 class="section-title text-left">Top Food and Restaurants in Puerto Princesa</h2>
@@ -364,9 +355,6 @@
             </div>
         </div>
     </section>
-
-
-    <!-- Footer -->
     <footer class="footer">
         <div class="container text-center">
             <p>© 2024 Explore Puerto Princesa | All Rights Reserved</p>
