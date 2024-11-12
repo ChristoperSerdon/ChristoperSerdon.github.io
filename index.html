@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            overflow-x: hidden; /* Prevent horizontal scroll */
+            overflow-x: hidden; 
         }
 
         .hero {
@@ -38,12 +38,12 @@
             margin: 10px;
             border: 2px solid skyblue;
             border-radius: 0.5rem;
-            position: relative; /* For hover effect */
+            position: relative; 
         }
 
         .project-card:hover {
-            transform: translateY(-20px); /* Slide up effect */
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            transform: translateY(-20px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); 
         }
 
         .project-card img {
@@ -51,11 +51,11 @@
             height: 200px;
             object-fit: contain;
             border-radius: 0.5rem 0.5rem 0 0;
-            transition: transform 0.3s; /* Animation for image zoom */
+            transition: transform 0.3s; 
         }
 
         .project-card:hover img {
-            transform: scale(1.05); /* Zoom effect on hover */
+            transform: scale(1.05);
         }
 
         .project-card .card-body {
@@ -95,16 +95,16 @@
         @keyframes fadeIn {
             0% {
                 opacity: 0;
-                transform: translateY(20px); /* Slide in from below */
+                transform: translateY(20px);
             }
             100% {
                 opacity: 1;
-                transform: translateY(0); /* End position */
+                transform: translateY(0); 
             }
         }
 
         .fade-in {
-            animation: fadeIn 1s ease-in-out; /* Duration and easing */
+            animation: fadeIn 1s ease-in-out; 
         }
 
         .hero h1 {
