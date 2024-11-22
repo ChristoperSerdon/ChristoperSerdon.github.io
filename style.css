@@ -11,7 +11,7 @@ body {
 
 h1 {
   font-family: 'Press Start 2P', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   color: #f0c040;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -34,12 +34,11 @@ h1 {
 }
 
 .card-title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   color: rgba(0, 123, 255, 0.7);
   margin-top: 10px;
 }
-
 
 input[type="text"] {
   border-radius: 25px;
